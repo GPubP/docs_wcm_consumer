@@ -12,11 +12,11 @@ Het **G**eneriek **Pub**licatie **P**latform is een verzameling van *bouwstenen*
 
 Het GPubP bestaat conceptueel uit 2 delen, deze kan je appart of samen gebruiken:
 
-* In het **Content** luik vind je de [Redactie UI](https://redactie.antwerpen.be) alsook de [WCMv4](https://acpaas.digipolis.be/nl/product/web-content-management-engine/web-content-management-engine-forms-module) terug. 
-* In het **Frontend** luik zal je de [Layout Renderer](https://layout-renderer-a.antwerpen.be/)  en de Page & Site builder terugvinden (ETA 2023).
+* In het **Content** luik vind je de [Redactie UI <i class="fa-solid fa-xs fa-arrow-up-right-from-square"></i>](https://redactie.antwerpen.be ':target="_blank"') alsook de [WCMv4 <i class="fa-solid fa-xs fa-arrow-up-right-from-square"></i>](https://acpaas.digipolis.be/nl/product/web-content-management-engine/web-content-management-engine-forms-module ':target="_blank"') terug. 
+* In het **Frontend** luik zal je de [Layout Renderer <i class="fa-solid fa-xs fa-arrow-up-right-from-square"></i>](https://layout-renderer-a.antwerpen.be/ ':target="_blank"')  en de Page & Site builder terugvinden (ETA 2023).
 
 > [!warning]
-> Deze gids is gemaakt voor het GPubP Content luik. [Klik hier](https://github.com/GPubP/docs_layout_renderer) om meer weten over het frontend luik.
+> Deze gids is gemaakt voor het GPubP Content luik. [Klik hier <i class="fa-solid fa-xs fa-arrow-up-right-from-square"></i>](https://github.com/GPubP/docs_layout_renderer ':target="_blank"') om meer weten over het frontend luik.
 
 ### Overzicht
 ![GPubP high level](../assets/GPubP.jpg)

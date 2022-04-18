@@ -1,10 +1,11 @@
 # Changelog
 
-## [1.0.0]: 2022-04-18
+## [0.1.0]: 2022-04-18
 
 ### Added
-- Introductie
-
+- Introductie 
+- Overzicht voor developers
+- Overzicht voor content beheerders
 
 ## Legende
 De release notes zijn chronologisch gesorteerd met de meeste recente release eerst. 
