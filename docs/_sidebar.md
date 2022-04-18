@@ -2,12 +2,13 @@
 * Introductie
     * [Welkom](/README.md "GPubP Content - Welkom")
     * [High level](/content/gpubp.md "GPubP Content - High level")
-    * [Contributie](/content/contributing.md "GPubP Content - Contributie")
+    * [Contributie](/CONTRIBUTING.md "GPubP Content - Contributie")
     * [Changelog](/CHANGELOG.md "GPubP Content - Changelog")
   
 * Getting Started
     * [Overzicht](/content/getting-started.md)
     * [Voorbereiding](/content/preparation.md)
+    * [FAQ](/content/troubleshooting.md)
 
 * API referentie
 

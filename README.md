@@ -2,7 +2,7 @@
 
 Ga naar de [Consumer docs | GPubP Content](https://gpubp.github.io/docs_wcm_consumer/#/)
 
-Bekijk ook het ACPaaS portaal: https://acpaas.digipolis.be/nl/product/generiek-publicatie-platform
+> Bekijk ook het [ACPaaS portaal](https://acpaas.digipolis.be/nl/product/generiek-publicatie-platform), hier staat ook nog nuttige info. Nog niet alles is hier overgezet.
 
 > Wil je mee bouwen aan het GPubP, bekijk dan de [WCM contributor](https://gpubp.github.io/docs_wcm_contributor/#/) gids of de [layout renderer](https://github.com/GPubP/docs_layout_renderer) docs.
 
