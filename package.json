@@ -1,0 +1,29 @@
+{
+  "name": "docs_wcm_consumer",
+  "version": "1.0.0",
+  "description": "Consumer documentation for GPubP Content",
+  "main": "docs/index.html",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "npx docsify serve ./docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GPubP/docs_wcm_consumer.git"
+  },
+  "keywords": [
+    "documentation",
+    "GPubP"
+  ],
+  "author": "Erik Lenaerts <erik.lenaerts@digipolis.be>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GPubP/docs_wcm_consumer/issues"
+  },
+  "homepage": "https://github.com/GPubP/docs_wcm_consumer#readme",
+  "dependencies": {
+    "docsify": "^4.12.2"
+  }
+}
