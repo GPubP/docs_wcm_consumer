@@ -17,10 +17,17 @@ Elk content item heeft een *publicatie status*, deze geeft aan waar het content 
 </p>
 
 ## Online vs Offline
-Een content item is online van zodra het gepubliceert is en het zal online blijven... 
 
-* zolang het niet **gearchiveerd** wordt
-* zolang er geen **nieuwere publicatie** is
+> [!note|label:hoe werkt het]
+> Een content item is online van ... 
+> * zodra het **gepubliceerd** is 
+> 
+> en het zal online blijven ... 
+>
+> * zolang het niet **gearchiveerd** wordt
+> * zolang er geen **nieuwere publicatie** is
+>
+> nieuwere werkversies hebben geen invloed op eerder gepubliceerde versies voor afnemers 
 
 <p align="center">
   <img src="../assets/gpubp-content-life-cycle-3.png"/>
@@ -39,7 +46,7 @@ Dit is een meer realistisch voorbeeld waarbij een content item verschillende ker
 </p>
 
 ## Standaard statussen
-Het systeem kent de volgende statussen. 
+Het systeem kent de volgende standaard statussen. 
 
 * **Nieuw**
 : Dit is de eerste status bij het aanmaken van een content item
@@ -54,14 +61,21 @@ Het systeem kent de volgende statussen.
 * **Gearchiveerd**
 : Het content item wordt offline gehaalt.
 
-Dit is voor de meeste gevallen 
+Dit is voor de meeste gevallen voldoende. Eigen custom statussen kunnen eveneens aangemaakt worden op tenant niveau.
 
 ## Publicatie of archivering plannen
 Todo
 
+## Uitgifte datum
+Todo
 
 ## Redactionele afspraken
+Todo
 
 ### Content rechten 
+Todo
 
 ### Workflows
+Todo
+
+#### Eigen status voorzien
