@@ -12,9 +12,19 @@ Elk content item heeft een *publicatie status*, deze geeft aan waar het content 
 2. je sleutelt aan één of meerdere **werkversies** die je op een gegeven moment **publiceert** om het vrij te geven aan afnemers
 3. op het einde **archiveer** je het content item waardoor het niet meer beschikbaar is voor afnemers.
 
-<p align="center">
-  <img src="../assets/gpubp-content-life-cycle-1.png"/>
-</p>
+![Content item life cycle](../assets/gpubp-content-life-cycle-1.png)
+
+Wanneer je het content item ophaalt zal je de status terugvinden in het meta luik.
+
+```json
+    ...
+    meta {
+        ...
+        "status": "DRAFT",
+        ...
+    }
+    ...
+```
 
 ## Online vs Offline
 
@@ -29,9 +39,20 @@ Elk content item heeft een *publicatie status*, deze geeft aan waar het content 
 >
 > nieuwere werkversies hebben geen invloed op eerder gepubliceerde versies voor afnemers 
 
-<p align="center">
-  <img src="../assets/gpubp-content-life-cycle-3.png"/>
-</p>
+![Content item life cycle](../assets/gpubp-content-life-cycle-3.png)
+
+Als je de data van een content item ophaalt staat er in het meta deel of het content item online of offline staat via het <code>published</code> attribuut. 
+
+```json
+    ...
+    meta {
+        ...
+        "published": true,
+        ...
+    }
+    ...
+```
+
 
 ## Een recentere werkversie ?
 Dit is een meer realistisch voorbeeld waarbij een content item verschillende keren wordt bijgewerkt en gepubliceerd wordt. In het blauw duiden we aan wat een afnemer ziet op punten 1, 2, 3 en 4, nl:
@@ -41,9 +62,27 @@ Dit is een meer realistisch voorbeeld waarbij een content item verschillende ker
 3. versie 5 heeft de voorgaande gepubliceerde versie vervangen, deze staat nu online
 4. de redacteur heeft het content item geachiveerd, bijgevolg is het offline
 
-<p align="center">
-  <img src="../assets/gpubp-content-life-cycle-4.png"/>
-</p>
+![Content item life cycle](../assets/gpubp-content-life-cycle-4.png)
+
+Als je de data van een content item ophaalt staat er in het meta deel of het content item online of offline staat via het <code>published</code> attribuut. 
+
+In het meta luik van een content item kan je verschillende datums opvragen om meer inzicht te krijgen in de versie geschiedenis. 
+
+```json
+    ...
+    meta {
+        ...
+        "created": "2022-03-11T11:40:54.941Z",
+        "firstPublished": "2022-03-11T11:41:02.310Z",
+        "lastModified": "2022-04-20T07:43:13.586Z",
+    }
+    ...
+```
+
+Via de redactie kan je ook de versie geschiedenis bekijken, hiervoor heb je wel de [Revisies module](https://gpubp.github.io/docs_wcm_contributor/#/content/wcm-modules) nodig. Open hiervoor een content item en ga naar de *Revisies* tab.
+
+![Content item publicatie plannen](../assets/gpubp-content-life-cycle-6.jpg)
+
 
 ## Standaard statussen
 Het systeem kent de volgende standaard statussen. 
@@ -61,21 +100,46 @@ Het systeem kent de volgende standaard statussen.
 * **Gearchiveerd**
 : Het content item wordt offline gehaalt.
 
-Dit is voor de meeste gevallen voldoende. Eigen custom statussen kunnen eveneens aangemaakt worden op tenant niveau.
+Dit is voor de meeste gevallen voldoende. Merk op dat je eigen custom statussen kan maken, dit is vooral handig als je met specifieke [workflows](/content/redactie/workflows.md) aan de slag gaat.
 
-## Publicatie of archivering plannen
-Todo
+## Scheduling
+De redactie heeft een functionaliteit om het één en ander in te plannen.
 
-## Uitgifte datum
-Todo
+Hiervoor ga je naar het content item en open je het *Planning* compartiment. Je kan zowel de **publicatie** als de **archivering** inplannen.
 
-## Redactionele afspraken
-Todo
+![Content item publicatie plannen](../assets/gpubp-content-life-cycle-5.jpg)
 
-### Content rechten 
-Todo
+Aan de data kan je aan de volgede attributen zien of een content item gepland is om te publiceren en/of te archiveren:
 
-### Workflows
-Todo
+```json
+    ...
+    meta {
+        ...
+        "publishTime": "2022-04-21T22:00:00.000Z",
+        "hasScheduled": true,
+        "unpublishTime": "2022-04-22T22:00:00.000Z",
+    }
+    ...
+```
+## Uitgifte tijdstip
+De meeste afnemers presenteren de publicatie tijdstip op hun pagina's als tijdstip wanneer de content online is gekomen. Toch zijn er situaties waarin je zelf als redactuer dit wilt instellen van jouw content item. 
 
-#### Eigen status voorzien
+> **Voorbeeld:** Stel je wil nieuwsberichten van de oude site overzetten en ze presenteren met het tijdstip waarin ze vroeger gepubliceerd zijn. 
+
+Hiervoor hebben we een apart *uitgifte tijdstip* dat je als redacteur kan instellen. Een [content beheerder](/content/redactie/onboarding?id=standaard-rollen) kan het gedrag van deze uitgifte tijdstip inrichten. Zo kan er gekozen worden voor:
+
+* Bepaal de default waarde van de uitgifte tijdstip, nl. eerste - of laatste publicatietijdstip
+* Bepaal of de redacteur de uitgifte datum kan aanpassen of niet 
+
+![Content item publicatie plannen](../assets/gpubp-content-life-cycle-7.jpg)
+
+Bij het ophalen van de data kan je het uitgifte tijdstip zo terug vinden:
+
+```json
+    ...
+    meta {
+        ...
+        "issuedOn": "2022-03-11T11:41:02.310Z",
+    }
+    ...
+```
