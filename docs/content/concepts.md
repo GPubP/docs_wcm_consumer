@@ -1,8 +1,8 @@
-# GPubP Content 
+# GPubP Concepten 
 
 Lees [hier een intro](/content/gpubp.md) van GPubP en GPubP Content
 
-# GPubP Content
+## GPubP Content
 
 Het Content beheer Bestaat uit de Redactie omgeving, zeg maar de User interface waarin Content Beheerders een inrichting doen én waarin redacteurs de effectieve Content Items beheren volgens die inrichting.
 
@@ -11,14 +11,14 @@ Het Content beheer Bestaat uit de Redactie omgeving, zeg maar de User interface 
 > [!note]
 > Je kan de Redactie bereiken via [https://redactie.antwerpen.be <i class="fa-solid fa-xs fa-arrow-up-right-from-square"></i>](https://redactie.antwerpen.be ':target="_blank"')
 
-# Modulaire opbouw
+## Modulaire opbouw
 
 De WCMv4 & Redactie zijn bijzonder modulair, heel het systeem is een reeks modules die onderling samenwerken. Hieronder beschrijven we er meer van in de architectuur. Het voordeel van z’n modulair systeem is dat je in verschillende situaties, verschillende combinaties van modules kunt opzetten. Zo kunnen we uiterste flexibiliteit nastreven, mede doordat het redactie/WCMv4 specifiek multi-instance, multi-tenant en multi-site eigenschappen bevat.
 
 > [!tip]
 > Wil je mee werken aan het platform? Bekijk dan zeker de [contributie docs <i class="fa-solid fa-xs fa-arrow-up-right-from-square"></i>](https://gpubp.github.io/docs_wcm_contributor/#/ ':target="_blank"').
 
-# Multi - instance, - tenant, - site
+## Multi - instance, - tenant, - site
 
 Om de grote hoeveelheid aan sites te organiseren en structureren zijn er 3 niveaus. 
 
@@ -64,7 +64,7 @@ Een content type of een content blok *geactiveerd* moet worden in een site. Ande
 
 ![Multi site](../assets/gpubp-basisbegrippen-sites.png)
 
-# Content Types
+## Content types
 
 Een Content Type is de essentie van elk CMS, ook dat van het GPubP. Het is definitie, een sjabloon, een blauwdruk waarmee redacteurs content items maken. 
 
@@ -93,7 +93,7 @@ Hieronder zie je een voorbeeld van een Nieuwsbericht content type en welke conte
 
 Zoals je ziet bestaat een content type op zich uit content componenten. Het geheel is dus het sjabloon dat je aan de redacteurs aanbiedt.
 
-# Content Blokken
+## Content blokken
 
 Content types en content blokken liggen heel dicht bij elkaar, ze delen quasi 99% van de eigenschappen met elkaar. Beide zijn sjablonen voor het maken van content items. Het subtiele verschil is:
 
@@ -112,9 +112,12 @@ Er zijn een 2 typische use cases waarvoor je content blokken gaat inzetten:
 2. je wil content aanmaken dat op zich geen eigen detailpagina heeft, maar eerder voorkomt in een opsomming/lijst van een andere pagina. 
    bv. in een help pagina tonen we FAQ items wat bestaat uit een vraag en antwoord. Het is voldoende om deze in een lijst op de hulp pagina te tonen, er moet niet naar een individueel FAQ item gesurft kunnen worden.
 
-# Content Componenten
+## Content componenten
 
 Als je aan een redacteur vraagt om een nieuwsartikel te maken, dan stel je haar/hem een scherm voor waarin hij/zij de verschillende onderdelen van het nieuwsartikel kan invoeren. Een titel, een intro, etc. deze onderdelen zijn voorbeelden van content componenten.
 
 ![Content Types](../assets/gpubp-content-componenten.jpg)
 
+## Content items
+
+Elke keer dat een redacteur iets aanmaakt op basis van een content type of een content blok, noemen we dit in't algemeen een content item.

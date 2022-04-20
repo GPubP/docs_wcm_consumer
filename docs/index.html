@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <title>Consumer docs | GPubP Content | Digipolis</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description"
-    content="Documentatie voor het gebruik van GPubP Content, voornamelijk de WCM engine.">
+  <meta name="description" content="Documentatie voor het gebruik van GPubP Content, voornamelijk de WCM engine.">
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/themes/vue.css">
@@ -85,6 +84,11 @@
         crossChapter: true,
         crossChapterText: true,
       },
+      toc: {
+        tocMaxLevel: 3,
+        subMaxLevel: 2,
+        target: 'h2, h3, h4, h5, h6'
+      },
       flexibleAlerts: {
         style: 'flat',
         note: {
@@ -118,6 +122,8 @@
   <script src="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
   <script src="https://unpkg.com/docsify-accordion/src/index.js"></script>
   <script src="https://unpkg.com/docsify-copy-code@2"></script>
+  <script src="https://unpkg.com/docsify-plugin-toc"></script>
+
 </body>
 
 </html>

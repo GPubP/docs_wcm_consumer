@@ -178,10 +178,6 @@ body.close .sidebar-toggle {
     padding: .75rem;
 }
 
-.alert.callout {
-    border-radius: 0 !important;
-}
-
 .markdown-section code,
 .markdown-section pre {
     background-color: #f3f3f3;
@@ -214,6 +210,10 @@ body.close .sidebar-toggle {
 
 .markdown-section em {
     color: #6f6f6f;
+}
+
+.alert.callout {
+    border-radius: 0 !important;
 }
 
 .alert p {
@@ -263,6 +263,15 @@ body.close .sidebar-toggle {
     padding: 1px 8px !important;
     transform: translate(-15%,-50%) !important;
 }
+
+.page_toc div.active {
+    border-left-color: rgb(0, 87, 183) !important;
+}
+
+.page_toc div[class^="lv"] a:hover span {
+    color: #0064b4 !important;
+}
+
 
 .rule-ref {
     background-color: #e6f0f8;
